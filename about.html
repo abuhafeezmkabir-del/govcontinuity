@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About GovContinuity Bureau - Nigeria's central escrow and contract continuity authority">
+    <title>About | GovContinuity Bureau</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B132B',
+                        'navy-light': '#1A2744',
+                        gold: '#D4AF37',
+                        'gold-light': '#E8D48B',
+                        'gold-dark': '#B8960F',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="font-body bg-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-navy/95 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="logo-container">
+                    <img src="assets/images/logo.jpeg" alt="GovContinuity Bureau" class="logo-img">
+                    <div>
+                        <span class="text-white font-display font-bold text-lg leading-tight block">GovContinuity</span>
+                        <span class="text-gold text-xs tracking-widest uppercase">Bureau</span>
+                    </div>
+                </a>
+                
+                <div class="hidden lg:flex items-center space-x-1">
+                    <a href="about.html" class="px-3 py-2 text-sm font-medium text-gold transition rounded-lg">About</a>
+                    <a href="vision.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Vision</a>
+                    <a href="mission.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Mission</a>
+                    <a href="contractors.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Contractors</a>
+                    <a href="banks.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Banks</a>
+                    <a href="governments.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Governments</a>
+                    <a href="protocol.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Protocol</a>
+                    <a href="legal.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Legal</a>
+                    <a href="dashboard.html" class="ml-3 px-5 py-2.5 bg-gold text-navy text-sm font-semibold rounded-lg hover:bg-gold-dark transition shadow-lg">
+                        Dashboard
+                    </a>
+                </div>
+                
+                <button id="mobile-menu-button" class="lg:hidden text-white hover:text-gold transition">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy-light border-t border-gray-700">
+            <div class="px-4 py-4 space-y-1">
+                <a href="about.html" class="block px-3 py-2 text-sm text-gold rounded-lg">About</a>
+                <a href="vision.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-gold rounded-lg">Vision</a>
+                <a href="mission.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-gold rounded-lg">Mission</a>
+                <a href="contractors.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-gold rounded-lg">For Contractors</a>
+                <a href="banks.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-gold rounded-lg">For Banks</a>
+                <a href="governments.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-gold rounded-lg">For Governments</a>
+                <a href="protocol.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-gold rounded-lg">Protocol</a>
+                <a href="legal.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-gold rounded-lg">Legal</a>
+                <a href="dashboard.html" class="block px-3 py-3 mt-2 bg-gold text-navy text-sm font-semibold rounded-lg text-center">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-navy">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div data-aos="fade-up">
+                <span class="text-gold font-semibold text-sm tracking-widest uppercase">About</span>
+                <h1 class="text-4xl md:text-5xl font-display font-bold text-white mt-4 mb-4">The Bureau</h1>
+                <p class="text-xl text-gray-300 max-w-3xl">We are the court, bank, and notary for government contracts in Nigeria.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are -->
+    <section class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold text-navy mb-6">Who We Are</h2>
+                    <div class="divider-gold"></div>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        The GovContinuity Bureau is Nigeria's statutory contract continuity authority. 
+                        We were established to solve the single largest threat to infrastructure delivery 
+                        in Nigeria: contract abandonment due to government transitions.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        We operate a central registry, escrow system, and arbitration mechanism 
+                        recognized by the Central Bank of Nigeria and the Federal High Court.
+                    </p>
+                </div>
+                <div class="bg-navy rounded-2xl p-10" data-aos="fade-left">
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-gold rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-building-columns text-navy"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">CBN-Regulated</h4>
+                                <p class="text-gray-400 text-sm">Operates under CBN escrow framework for government contracts</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-gold rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-scale-balanced text-navy"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">Statutory Authority</h4>
+                                <p class="text-gray-400 text-sm">Empowered by the Government Contract Continuity Act</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-gold rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-gavel text-navy"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">Arbitration Body</h4>
+                                <p class="text-gray-400 text-sm">CBN-recognized arbitrator for contract disputes during transitions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Origin Timeline -->
+    <section class="section-padding bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-navy">Origin & Establishment</h2>
+                <div class="divider-gold mx-auto"></div>
+            </div>
+            
+            <div class="space-y-8">
+                <div class="flex gap-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex flex-col items-center">
+                        <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-gold font-bold">1</span>
+                        </div>
+                        <div class="w-0.5 h-full bg-gold/30"></div>
+                    </div>
+                    <div class="pb-8">
+                        <span class="text-gold text-sm font-semibold">2019-2022</span>
+                        <h3 class="text-xl font-bold text-navy mt-1">The Crisis Identified</h3>
+                        <p class="text-gray-600 mt-2">Analysis revealed ₦8.4 trillion in contract losses across three election cycles. CBN, EFCC, and BPP jointly identified government transitions as the primary mechanism of contract failure.</p>
+                    </div>
+                </div>
+                
+                <div class="flex gap-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex flex-col items-center">
+                        <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-gold font-bold">2</span>
+                        </div>
+                        <div class="w-0.5 h-full bg-gold/30"></div>
+                    </div>
+                    <div class="pb-8">
+                        <span class="text-gold text-sm font-semibold">2023</span>
+                        <h3 class="text-xl font-bold text-navy mt-1">Legislative Framework</h3>
+                        <p class="text-gray-600 mt-2">The Government Contract Continuity Act established the Bureau as an independent statutory body with escrow, certification, and arbitration powers.</p>
+                    </div>
+                </div>
+                
+                <div class="flex gap-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex flex-col items-center">
+                        <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-navy font-bold">3</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-gold text-sm font-semibold">2024-Present</span>
+                        <h3 class="text-xl font-bold text-navy mt-1">Operational</h3>
+                        <p class="text-gray-600 mt-2">Full operations commenced. 143 contracts certified, ₦62.8 billion in escrow protection. First arbitration cases successfully resolved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Governance -->
+    <section class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-navy">Governance</h2>
+                <div class="divider-gold mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">The Bureau is governed by a board of directors drawn from Nigeria's financial, legal, and public administration institutions.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-premium p-8 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-20 h-20 bg-navy rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-tie text-2xl text-gold"></i>
+                    </div>
+                    <h4 class="font-bold text-navy text-lg">Chairman</h4>
+                    <p class="text-gray-500 text-sm">Former CBN Deputy Governor</p>
+                    <p class="text-gold text-xs mt-2 font-semibold">Appointed by the President</p>
+                </div>
+                
+                <div class="card-premium p-8 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 bg-navy rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-tie text-2xl text-gold"></i>
+                    </div>
+                    <h4 class="font-bold text-navy text-lg">Managing Director</h4>
+                    <p class="text-gray-500 text-sm">Infrastructure Finance Expert</p>
+                    <p class="text-gold text-xs mt-2 font-semibold">CBN-Approved</p>
+                </div>
+                
+                <div class="card-premium p-8 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-20 h-20 bg-navy rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-2xl text-gold"></i>
+                    </div>
+                    <h4 class="font-bold text-navy text-lg">Board of Directors</h4>
+                    <p class="text-gray-500 text-sm">7 Members</p>
+                    <p class="text-gold text-xs mt-2 font-semibold">CBN, BPP, NGF Representatives</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-padding bg-navy text-white text-center">
+        <div class="max-w-3xl mx-auto px-4" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Register with the Bureau</h2>
+            <p class="text-gray-300 mb-8">Protect your government contracts from political transition risk.</p>
+            <a href="contractors.html" class="btn-primary text-lg px-10 py-5">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy border-t border-gray-800 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-gold rounded-lg flex items-center justify-center">
+                            <i class="fas fa-landmark text-navy text-lg"></i>
+                        </div>
+                        <span class="text-white font-bold">GovContinuity</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Nigeria's central escrow and contract continuity authority.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="about.html" class="hover:text-gold">About</a></li>
+                        <li><a href="protocol.html" class="hover:text-gold">Protocol</a></li>
+                        <li><a href="legal.html" class="hover:text-gold">Legal</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Stakeholders</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="contractors.html" class="hover:text-gold">For Contractors</a></li>
+                        <li><a href="banks.html" class="hover:text-gold">For Banks</a></li>
+                        <li><a href="governments.html" class="hover:text-gold">For Governments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>Abuja, Nigeria</li>
+                        <li>info@govcontinuity.ng</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; <span id="current-year">2026</span> GovContinuity Bureau. All rights reserved. Regulated by the Central Bank of Nigeria.</p>
+                <p>Powered by Qafam Software Technology Designed with <i class="fas fa-heart text-red-500"></i> by Hafeez Technologies </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

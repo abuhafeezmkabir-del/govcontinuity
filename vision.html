@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GovContinuity Bureau Vision - A Nigeria where government contracts survive governments">
+    <title>Vision | GovContinuity Bureau</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B132B',
+                        'navy-light': '#1A2744',
+                        gold: '#D4AF37',
+                        'gold-light': '#E8D48B',
+                        'gold-dark': '#B8960F',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="font-body bg-navy text-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-navy/95 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="logo-container">
+                    <img src="assets/images/logo.jpeg" alt="GovContinuity Bureau" class="logo-img">
+                    <div>
+                        <span class="text-white font-display font-bold text-lg leading-tight block">GovContinuity</span>
+                        <span class="text-gold text-xs tracking-widest uppercase">Bureau</span>
+                    </div>
+                </a>
+                
+                <div class="hidden lg:flex items-center space-x-1">
+                    <a href="about.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">About</a>
+                    <a href="vision.html" class="px-3 py-2 text-sm font-medium text-gold transition rounded-lg">Vision</a>
+                    <a href="mission.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Mission</a>
+                    <a href="contractors.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Contractors</a>
+                    <a href="banks.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Banks</a>
+                    <a href="governments.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Governments</a>
+                    <a href="protocol.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Protocol</a>
+                    <a href="legal.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Legal</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="lg:hidden text-white hover:text-gold transition">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy-light border-t border-gray-700">
+            <div class="px-4 py-4 space-y-1">
+                <a href="about.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">About</a>
+                <a href="vision.html" class="block px-3 py-2 text-sm text-gold rounded-lg">Vision</a>
+                <a href="mission.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">Mission</a>
+                <a href="contractors.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">Contractors</a>
+                <a href="banks.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">Banks</a>
+                <a href="governments.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">Governments</a>
+                <a href="protocol.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">Protocol</a>
+                <a href="legal.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">Legal</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Vision Content -->
+    <section class="min-h-screen flex items-center pt-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+            <div data-aos="fade-up">
+                <span class="text-gold font-semibold text-sm tracking-widest uppercase">Our Vision</span>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-black mt-6 mb-8 leading-tight">
+                    A Nigeria where<br>
+                    <span class="text-gold">government contracts</span><br>
+                    survive governments.
+                </h1>
+                <div class="divider-gold mx-auto"></div>
+                <p class="text-xl md:text-2xl text-gray-300 mt-8 max-w-3xl mx-auto leading-relaxed">
+                    We envision a federation where no contractor goes bankrupt because an election happened. 
+                    Where banks lend against government work with certainty. 
+                    Where every administration inherits clean books.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mt-20" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-center">
+                    <div class="text-5xl font-black text-gold mb-4">100%</div>
+                    <p class="text-gray-400">Contract Continuity</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-black text-gold mb-4">₦0</div>
+                    <p class="text-gray-400">Abandoned Contracts</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-black text-gold mb-4">0</div>
+                    <p class="text-gray-400">Post-Transition Lawsuits</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy border-t border-gray-800 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500">
+            <p>&copy; <span id="current-year">2026</span> GovContinuity Bureau. All rights reserved. Regulated by the Central Bank of Nigeria.</p>
+            <p>Powered by Qafam Software Technology Designed with <i class="fas fa-heart text-red-500"></i> by Hafeez Technologies </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

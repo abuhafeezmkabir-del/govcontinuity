@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GovContinuity Bureau - Legal & Compliance Framework">
+    <title>Legal & Compliance | GovContinuity Bureau</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B132B',
+                        'navy-light': '#1A2744',
+                        gold: '#D4AF37',
+                        'gold-light': '#E8D48B',
+                        'gold-dark': '#B8960F',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="font-body bg-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-navy/95 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="logo-container">
+                    <img src="assets/images/logo.jpeg" alt="GovContinuity Bureau" class="logo-img">
+                    <div>
+                        <span class="text-white font-display font-bold text-lg leading-tight block">GovContinuity</span>
+                        <span class="text-gold text-xs tracking-widest uppercase">Bureau</span>
+                    </div>
+                </a>
+                
+                <div class="hidden lg:flex items-center space-x-1">
+                    <a href="about.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold rounded-lg">About</a>
+                    <a href="vision.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold rounded-lg">Vision</a>
+                    <a href="mission.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold rounded-lg">Mission</a>
+                    <a href="contractors.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold rounded-lg">Contractors</a>
+                    <a href="banks.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold rounded-lg">Banks</a>
+                    <a href="governments.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold rounded-lg">Governments</a>
+                    <a href="protocol.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold rounded-lg">Protocol</a>
+                    <a href="legal.html" class="px-3 py-2 text-sm font-medium text-gold rounded-lg">Legal</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="lg:hidden text-white hover:text-gold transition">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy-light border-t border-gray-700">
+            <div class="px-4 py-4 space-y-1">
+                <a href="about.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">About</a>
+                <a href="vision.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">Vision</a>
+                <a href="mission.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">Mission</a>
+                <a href="contractors.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">Contractors</a>
+                <a href="banks.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">Banks</a>
+                <a href="governments.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">Governments</a>
+                <a href="protocol.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">Protocol</a>
+                <a href="legal.html" class="block px-3 py-2 text-sm text-gold rounded-lg">Legal</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+            <span class="text-gold font-semibold text-sm tracking-widest uppercase">Legal</span>
+            <h1 class="text-4xl md:text-5xl font-display font-bold mt-4 mb-4">Legal & Compliance</h1>
+            <p class="text-xl text-gray-300">Statutory framework, regulations, and compliance documents.</p>
+        </div>
+    </section>
+
+    <!-- Document Style Layout -->
+    <section class="section-padding bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Enabling Legislation -->
+            <div class="mb-16" data-aos="fade-up">
+                <h2 class="text-2xl font-display font-bold text-navy mb-6">Enabling Legislation</h2>
+                <div class="card-premium p-8">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-navy">Government Contract Continuity Act, 2023</h3>
+                            <p class="text-gray-600 text-sm mt-1">Act No. 12 of 2023 | Assented: 15 March 2023</p>
+                            <p class="text-gray-500 text-sm mt-3">Establishes the GovContinuity Bureau as an independent statutory body with powers to register, escrow, certify, and arbitrate government contracts during political transitions.</p>
+                        </div>
+                        <a href="#" class="btn-navy flex-shrink-0 ml-6 px-4 py-2 text-sm">
+                            <i class="fas fa-download mr-2"></i> Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Regulations -->
+            <div class="mb-16" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="text-2xl font-display font-bold text-navy mb-6">Bureau Regulations</h2>
+                <div class="space-y-4">
+                    <div class="card-premium p-6 flex items-center justify-between">
+                        <div>
+                            <h4 class="font-semibold text-navy">Contract Registration Regulation</h4>
+                            <p class="text-gray-500 text-sm">Bureau Reg. 2024/001 — Thresholds, procedures, and documentation requirements</p>
+                        </div>
+                        <a href="#" class="btn-navy px-4 py-2 text-sm"><i class="fas fa-download mr-2"></i> PDF</a>
+                    </div>
+                    <div class="card-premium p-6 flex items-center justify-between">
+                        <div>
+                            <h4 class="font-semibold text-navy">Escrow Management Regulation</h4>
+                            <p class="text-gray-500 text-sm">Bureau Reg. 2024/002 — CBN-compliant escrow framework for government contracts</p>
+                        </div>
+                        <a href="#" class="btn-navy px-4 py-2 text-sm"><i class="fas fa-download mr-2"></i> PDF</a>
+                    </div>
+                    <div class="card-premium p-6 flex items-center justify-between">
+                        <div>
+                            <h4 class="font-semibold text-navy">Arbitration Rules</h4>
+                            <p class="text-gray-500 text-sm">Bureau Reg. 2024/003 — Procedures for contract dispute resolution during transitions</p>
+                        </div>
+                        <a href="#" class="btn-navy px-4 py-2 text-sm"><i class="fas fa-download mr-2"></i> PDF</a>
+                    </div>
+                    <div class="card-premium p-6 flex items-center justify-between">
+                        <div>
+                            <h4 class="font-semibold text-navy">Certification Standards</h4>
+                            <p class="text-gray-500 text-sm">Bureau Reg. 2024/004 — Criteria for GovContinuity Seal issuance and maintenance</p>
+                        </div>
+                        <a href="#" class="btn-navy px-4 py-2 text-sm"><i class="fas fa-download mr-2"></i> PDF</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CBN Circulars -->
+            <div class="mb-16" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="text-2xl font-display font-bold text-navy mb-6">CBN Regulatory Framework</h2>
+                <div class="card-premium p-8">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-navy">CBN Circular on Government Contract Escrow</h3>
+                            <p class="text-gray-600 text-sm mt-1">Ref: CBN/GOV/2024/001 | Date: 2 January 2024</p>
+                            <p class="text-gray-500 text-sm mt-3">Directs all deposit money banks to recognize GovContinuity-certified contracts as eligible collateral for lending and to participate in the Bureau's escrow framework.</p>
+                        </div>
+                        <a href="#" class="btn-navy flex-shrink-0 ml-6 px-4 py-2 text-sm">
+                            <i class="fas fa-download mr-2"></i> Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Compliance -->
+            <div data-aos="fade-up" data-aos-delay="300">
+                <h2 class="text-2xl font-display font-bold text-navy mb-6">Compliance Advisory</h2>
+                <div class="bg-gold/5 border border-gold/30 rounded-xl p-8">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-gold rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-info text-navy"></i>
+                        </div>
+                        <div>
+                            <p class="text-gray-700 mb-4">
+                                This website provides general information about the GovContinuity Bureau and its services. 
+                                It does not constitute legal advice. For specific legal guidance on contract registration, 
+                                escrow requirements, or arbitration procedures, please contact the Bureau directly or consult 
+                                qualified legal counsel.
+                            </p>
+                            <a href="contact.html" class="text-gold font-semibold hover:text-gold-dark">
+                                Contact the Bureau <i class="fas fa-arrow-right ml-1 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy border-t border-gray-800 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm text-gray-500">
+            <p>&copy; <span id="current-year">2026</span> GovContinuity Bureau. All rights reserved. Regulated by the Central Bank of Nigeria.</p>
+            <p>Powered by Qafam Software Technology Designed with <i class="fas fa-heart text-red-500"></i> by Hafeez Technologies </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

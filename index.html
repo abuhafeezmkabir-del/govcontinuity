@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GovContinuity Bureau - Government Changes. Contracts Don't. Nigeria's central escrow and contract continuity authority.">
+    <meta name="keywords" content="government contracts, escrow, Nigeria, contract continuity, CBN arbitration, infrastructure">
+    <meta property="og:title" content="GovContinuity Bureau - Government Changes. Contracts Don't.">
+    <meta property="og:description" content="Nigeria's central escrow and contract continuity authority. Protecting ₦62.8B in government contracts.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/img.jpeg">
+    <link rel="shortcut icon" href="assets/images/logo.jpeg" type="image/x-icon">
+    
+    <title>GovContinuity Bureau | Government Changes. Contracts Don't.</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B132B',
+                        'navy-light': '#1A2744',
+                        gold: '#D4AF37',
+                        'gold-light': '#E8D48B',
+                        'gold-dark': '#B8960F',
+                    },
+                    fontFamily: {
+                        display: ['Inter', 'system-ui', 'sans-serif'],
+                        body: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="font-body bg-white text-gray-900 antialiased">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-navy/95 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="logo-container">
+                    <img src="assets/images/logo.jpeg" alt="GovContinuity Bureau Logo" class="logo-img">
+                    <div>
+                        <span class="text-white font-display font-bold text-lg leading-tight block">GovContinuity</span>
+                        <span class="text-gold text-xs tracking-widest uppercase">Bureau</span>
+                    </div>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-1">
+                    <a href="about.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">About</a>
+                    <a href="vision.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Vision</a>
+                    <a href="mission.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Mission</a>
+                    <a href="contractors.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Contractors</a>
+                    <a href="banks.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Banks</a>
+                    <a href="governments.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Governments</a>
+                    <a href="protocol.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Protocol</a>
+                    <a href="legal.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition rounded-lg">Legal</a>
+                    <a href="dashboard.html" class="ml-3 px-5 py-2.5 bg-gold text-navy text-sm font-semibold rounded-lg hover:bg-gold-dark transition shadow-lg">
+                        Dashboard
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="lg:hidden text-white hover:text-gold transition">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy-light border-t border-gray-700">
+            <div class="px-4 py-4 space-y-1">
+                <a href="about.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-gold transition rounded-lg">About</a>
+                <a href="vision.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-gold transition rounded-lg">Vision</a>
+                <a href="mission.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-gold transition rounded-lg">Mission</a>
+                <a href="contractors.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-gold transition rounded-lg">For Contractors</a>
+                <a href="banks.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-gold transition rounded-lg">For Banks</a>
+                <a href="governments.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-gold transition rounded-lg">For Governments</a>
+                <a href="protocol.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-gold transition rounded-lg">Protocol</a>
+                <a href="legal.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-gold transition rounded-lg">Legal</a>
+                <a href="dashboard.html" class="block px-3 py-3 mt-2 bg-gold text-navy text-sm font-semibold rounded-lg text-center">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Infrastructure Image Background -->
+    <section class="relative min-h-screen flex items-center bg-navy overflow-hidden">
+        <!-- Background Image - Infrastructure Project -->
+        <div class="absolute inset-0">
+            <img src="assets/images/img1.jpeg" 
+                 alt="Major infrastructure project in Nigeria" 
+                 class="img-hero w-full h-full object-cover opacity-30"
+                 loading="eager">
+            <div class="absolute inset-0 bg-gradient-to-r from-navy via-navy/80 to-transparent"></div>
+        </div>
+        <!-- Pattern Overlay -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, #D4AF37 1px, transparent 0); background-size: 40px 40px;"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
+            <div class="max-w-3xl" data-aos="fade-up" data-aos-duration="1000">
+                <div class="inline-flex items-center px-3 py-1 bg-gold/20 border border-gold/30 rounded-full text-gold text-sm font-medium mb-6">
+                    <i class="fas fa-shield-alt mr-2"></i> CBN-Recognized Arbitration Body
+                </div>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-black text-white leading-none mb-6">
+                    Government<br>Changes.<br>
+                    <span class="text-gold">Contracts Don't.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl">
+                    Nigeria's central escrow and contract continuity authority. 
+                    We register, escrow, and certify government contracts so transitions don't become cancellations.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="contractors.html" class="btn-primary">
+                        Register Your Contract
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="banks.html" class="btn-outline">
+                        For Banks
+                    </a>
+                    <a href="governments.html" class="bg-transparent border-2 border-white/30 text-white font-semibold px-8 py-4 rounded-lg hover:border-white transition inline-flex items-center justify-center gap-2">
+                        For New Governments
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authority Bar -->
+    <section class="bg-navy-light border-b border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number text-gold mb-2" data-counter data-target="62800000000">₦0</div>
+                    <p class="text-gray-400 font-medium">In Escrow Protection</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number text-white mb-2" data-counter data-target="143">0</div>
+                    <p class="text-gray-400 font-medium">Contracts Certified</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-gold text-4xl font-black mb-2">
+                        <i class="fas fa-check-circle"></i> CBN
+                    </div>
+                    <p class="text-gray-400 font-medium">Recognized Arbitration Body</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem -->
+    <section class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <span class="text-gold font-semibold text-sm tracking-widest uppercase">The Crisis</span>
+                    <h2 class="text-4xl md:text-5xl font-display font-bold text-navy mt-4 mb-6">
+                        The ₦8.4 Trillion Problem
+                    </h2>
+                    <div class="divider-gold"></div>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        Every election cycle, Nigeria loses an estimated ₦8.4 trillion in abandoned, 
+                        renegotiated, or cancelled government contracts. This breaks contractors, 
+                        destroys bank balance sheets, and paralyzes governance.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fas fa-times text-red-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-navy">Contractors go bankrupt</p>
+                                <p class="text-gray-500 text-sm">Unpaid for completed work after government changes</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fas fa-times text-red-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-navy">Banks accumulate NPLs</p>
+                                <p class="text-gray-500 text-sm">Non-performing loans from contractor defaults</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fas fa-times text-red-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-navy">New governments face lawsuits</p>
+                                <p class="text-gray-500 text-sm">Inheriting liabilities from previous administrations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="img-overlay-gold">
+                    <img src="assets/images/img2.jpeg" alt="Infrastructure project at risk" class="img-premium w-full h-96 object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <p class="text-sm font-medium">Projects like this are at risk during government transitions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Solution -->
+    <section class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-gold font-semibold text-sm tracking-widest uppercase">The Solution</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-navy mt-4">How GovContinuity Works</h2>
+                <div class="divider-gold mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="card-premium p-8 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-navy rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-file-signature text-2xl text-gold"></i>
+                    </div>
+                    <div class="text-gold font-bold text-sm mb-2">STEP 1</div>
+                    <h3 class="text-xl font-bold text-navy mb-3">REGISTER</h3>
+                    <p class="text-gray-600 text-sm">Government contracts are registered with full terms, parties, and payment schedules.</p>
+                </div>
+                
+                <div class="card-premium p-8 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-navy rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-vault text-2xl text-gold"></i>
+                    </div>
+                    <div class="text-gold font-bold text-sm mb-2">STEP 2</div>
+                    <h3 class="text-xl font-bold text-navy mb-3">ESCROW</h3>
+                    <p class="text-gray-600 text-sm">Funds placed in CBN-regulated escrow accounts, released upon verified milestones.</p>
+                </div>
+                
+                <div class="card-premium p-8 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-navy rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-halved text-2xl text-gold"></i>
+                    </div>
+                    <div class="text-gold font-bold text-sm mb-2">STEP 3</div>
+                    <h3 class="text-xl font-bold text-navy mb-3">INSURE</h3>
+                    <p class="text-gray-600 text-sm">Political risk insurance guarantees payment even during government changes.</p>
+                </div>
+                
+                <div class="card-premium p-8 text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-navy rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-certificate text-2xl text-gold"></i>
+                    </div>
+                    <div class="text-gold font-bold text-sm mb-2">STEP 4</div>
+                    <h3 class="text-xl font-bold text-navy mb-3">CERTIFY</h3>
+                    <p class="text-gray-600 text-sm">Contracts receive GovContinuity certification — recognized by courts and banks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure Gallery Section -->
+    <section class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-gold font-semibold text-sm tracking-widest uppercase">Protected Projects</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-navy mt-4">Infrastructure We Protect</h2>
+                <div class="divider-gold mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">From bridges to dams, every certified contract ensures Nigeria's infrastructure continues regardless of political transitions.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/images/img3.jpeg" alt="Bridge construction project" loading="lazy">
+                    <div class="caption">
+                        <h4 class="font-semibold text-gold">Bridge Infrastructure</h4>
+                        <p class="text-sm text-gray-300">Protected contract continuity</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/images/img4.jpeg" alt="Dam construction" loading="lazy">
+                    <div class="caption">
+                        <h4 class="font-semibold text-gold">Dam Projects</h4>
+                        <p class="text-sm text-gray-300">Escrow-backed funding</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/images/img5.jpeg" alt="Building construction" loading="lazy">
+                    <div class="caption">
+                        <h4 class="font-semibold text-gold">Public Buildings</h4>
+                        <p class="text-sm text-gray-300">Certified & protected</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+                    <img src="assets/images/img6.jpeg" alt="Road construction" loading="lazy">
+                    <div class="caption">
+                        <h4 class="font-semibold text-gold">Road Networks</h4>
+                        <p class="text-sm text-gray-300">Transition-proof contracts</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="500">
+                    <img src="assets/images/img7.jpeg" alt="Infrastructure development" loading="lazy">
+                    <div class="caption">
+                        <h4 class="font-semibold text-gold">Urban Development</h4>
+                        <p class="text-sm text-gray-300">Continuous progress</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="600">
+                    <img src="assets/images/img8.jpeg" alt="Construction project" loading="lazy">
+                    <div class="caption">
+                        <h4 class="font-semibold text-gold">National Projects</h4>
+                        <p class="text-sm text-gray-300">Protected by the Bureau</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Serve -->
+    <section class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-gold font-semibold text-sm tracking-widest uppercase">Stakeholders</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-navy mt-4">Who We Serve</h2>
+                <div class="divider-gold mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card-premium p-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-navy rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-hard-hat text-gold text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Contractors</h3>
+                    <p class="text-gray-600 text-sm">Get paid for completed work regardless of election outcomes.</p>
+                    <a href="contractors.html" class="inline-flex items-center text-gold font-semibold text-sm mt-4 hover:text-gold-dark">
+                        Learn More <i class="fas fa-arrow-right ml-1 text-xs"></i>
+                    </a>
+                </div>
+                
+                <div class="card-premium p-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-navy rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-building-columns text-gold text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Banks</h3>
+                    <p class="text-gray-600 text-sm">Lend against certified government contracts with escrow-backed security.</p>
+                    <a href="banks.html" class="inline-flex items-center text-gold font-semibold text-sm mt-4 hover:text-gold-dark">
+                        Learn More <i class="fas fa-arrow-right ml-1 text-xs"></i>
+                    </a>
+                </div>
+                
+                <div class="card-premium p-8" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-navy rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-arrow-right-from-bracket text-gold text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Outgoing Govts</h3>
+                    <p class="text-gray-600 text-sm">Exit cleanly. Transfer contracts without legacy liabilities.</p>
+                    <a href="governments.html" class="inline-flex items-center text-gold font-semibold text-sm mt-4 hover:text-gold-dark">
+                        Learn More <i class="fas fa-arrow-right ml-1 text-xs"></i>
+                    </a>
+                </div>
+                
+                <div class="card-premium p-8" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-12 h-12 bg-navy rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-arrow-right-to-bracket text-gold text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">New Govts</h3>
+                    <p class="text-gray-600 text-sm">Start with a clean contract register. No hidden liabilities.</p>
+                    <a href="governments.html" class="inline-flex items-center text-gold font-semibold text-sm mt-4 hover:text-gold-dark">
+                        Learn More <i class="fas fa-arrow-right ml-1 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Case with Image -->
+    <section class="section-padding bg-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <span class="text-gold font-semibold text-sm tracking-widest uppercase">Featured Case</span>
+                    <h2 class="text-4xl md:text-5xl font-display font-bold mt-4 mb-6">FCT Infrastructure Works</h2>
+                    <div class="card-gold-border p-8">
+                        <div class="grid grid-cols-3 gap-6 text-center">
+                            <div>
+                                <div class="text-2xl font-black text-gold">₦812B</div>
+                                <p class="text-gray-400 text-xs mt-2">Total Value</p>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-black text-gold">₦62.8B</div>
+                                <p class="text-gray-400 text-xs mt-2">In Escrow</p>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-black text-white">0</div>
+                                <p class="text-gray-400 text-xs mt-2">Unknown Liabilities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="assets/images/img9.jpeg" alt="FCT Infrastructure Project" class="img-premium w-full h-80 object-cover rounded-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA with Background Image -->
+    <section class="relative section-padding">
+        <div class="absolute inset-0">
+            <img src="assets/images/img10.jpeg" alt="Infrastructure development in Nigeria" class="w-full h-full object-cover opacity-20">
+        </div>
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+            <h2 class="text-4xl md:text-6xl font-display font-black text-navy mb-6">
+                Contracts should survive<br>
+                <span class="text-gold">governments.</span>
+            </h2>
+            <p class="text-xl text-gray-700 mb-10">Register your contract today. Protect it for the duration.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contractors.html" class="btn-primary text-lg px-10 py-5">
+                    Register Your Contract
+                </a>
+                <a href="contact.html" class="btn-navy text-lg px-10 py-5">
+                    Contact the Bureau
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy border-t border-gray-800 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="logo-container mb-6">
+                        <img src="assets/images/logo.jpeg" alt="GovContinuity Bureau" class="logo-img">
+                        <div>
+                            <span class="text-white font-bold text-lg block">GovContinuity</span>
+                            <span class="text-gold text-xs tracking-widest uppercase">Bureau</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm">Nigeria's central escrow and contract continuity authority.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="about.html" class="hover:text-gold transition">About</a></li>
+                        <li><a href="protocol.html" class="hover:text-gold transition">Protocol</a></li>
+                        <li><a href="legal.html" class="hover:text-gold transition">Legal</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Stakeholders</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="contractors.html" class="hover:text-gold transition">For Contractors</a></li>
+                        <li><a href="banks.html" class="hover:text-gold transition">For Banks</a></li>
+                        <li><a href="governments.html" class="hover:text-gold transition">For Governments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>Abuja, Nigeria</li>
+                        <li>info@govcontinuity.ng</li>
+                        <li><a href="contact.html" class="text-gold hover:text-gold-dark">Contact Page</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; <span id="current-year">2026</span> GovContinuity Bureau. All rights reserved. Regulated by the Central Bank of Nigeria.</p>
+                <p>Powered by Qafam Software Technology Designed with <i class="fas fa-heart text-red-500"></i> by Hafeez Technologies </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

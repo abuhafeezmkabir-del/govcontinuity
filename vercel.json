@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "name": "govcontinuity-bureau",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/vision", "destination": "/vision.html" },
+    { "source": "/mission", "destination": "/mission.html" },
+    { "source": "/contractors", "destination": "/contractors.html" },
+    { "source": "/banks", "destination": "/banks.html" },
+    { "source": "/governments", "destination": "/governments.html" },
+    { "source": "/protocol", "destination": "/protocol.html" },
+    { "source": "/legal", "destination": "/legal.html" },
+    { "source": "/dashboard", "destination": "/dashboard.html" },
+    { "source": "/contact", "destination": "/contact.html" }
+  ]
+}

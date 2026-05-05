@@ -1,0 +1,312 @@
+/* GovContinuity Bureau - Design System */
+/* Premium, Institutional, Authority */
+
+:root {
+    --navy: #0B132B;
+    --navy-light: #1A2744;
+    --gold: #D4AF37;
+    --gold-light: #E8D48B;
+    --gold-dark: #B8960F;
+    --white: #FFFFFF;
+    --gray-50: #F5F7FA;
+    --gray-100: #E8ECF1;
+    --gray-200: #D1D8E0;
+    --gray-300: #A0AEC0;
+    --gray-700: #4A5568;
+    --gray-900: #1A202C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--white);
+    color: var(--gray-900);
+}
+
+/* Typography */
+.font-display {
+    font-family: 'Inter', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+}
+
+/* Gold Gradient Text */
+.text-gold-gradient {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gray-50);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gold);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gold-dark);
+}
+
+/* Cards */
+.card-premium {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-premium:hover {
+    border-color: var(--gold);
+    box-shadow: 0 20px 40px -12px rgba(11, 19, 43, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Gold Border Card */
+.card-gold-border {
+    border: 2px solid var(--gold);
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, rgba(212, 175, 55, 0.02) 100%);
+}
+
+/* Buttons */
+.btn-primary {
+    background: var(--gold);
+    color: var(--navy);
+    font-weight: 600;
+    padding: 14px 32px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+}
+
+.btn-primary:hover {
+    background: var(--gold-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(212, 175, 55, 0.3);
+}
+
+.btn-outline {
+    border: 2px solid var(--gold);
+    color: var(--gold);
+    font-weight: 600;
+    padding: 14px 32px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 15px;
+}
+
+.btn-outline:hover {
+    background: var(--gold);
+    color: var(--navy);
+}
+
+.btn-navy {
+    background: var(--navy);
+    color: var(--white);
+    font-weight: 600;
+    padding: 14px 32px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 15px;
+}
+
+.btn-navy:hover {
+    background: var(--navy-light);
+    box-shadow: 0 8px 24px rgba(11, 19, 43, 0.3);
+}
+
+/* Stats Counter */
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1;
+}
+
+/* Section Spacing */
+.section-padding {
+    padding: 100px 0;
+}
+
+/* Navbar */
+.navbar-scrolled {
+    background: rgba(11, 19, 43, 0.98) !important;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Divider */
+.divider-gold {
+    height: 3px;
+    background: var(--gold);
+    width: 60px;
+    margin: 20px 0;
+}
+
+/* Table Styles */
+.table-premium {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table-premium th {
+    background: var(--navy);
+    color: var(--white);
+    padding: 16px;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+.table-premium td {
+    padding: 16px;
+    border-bottom: 1px solid var(--gray-100);
+    font-size: 14px;
+}
+
+.table-premium tr:hover td {
+    background: var(--gray-50);
+}
+
+/* Loading Shimmer */
+@keyframes shimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+}
+
+.shimmer {
+    background: linear-gradient(90deg, var(--gray-100) 25%, var(--gray-50) 50%, var(--gray-100) 75%);
+    background-size: 1000px 100%;
+    animation: shimmer 2s infinite;
+}
+
+/* Focus States */
+*:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+    nav, footer, .no-print {
+        display: none !important;
+    }
+}
+/* Add to existing styles.css */
+
+/* Image Styles */
+.img-premium {
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-premium:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px -12px rgba(11, 19, 43, 0.2);
+}
+
+.img-overlay-gold {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.img-overlay-gold::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(11, 19, 43, 0.7) 0%, transparent 60%);
+}
+
+.img-hero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+
+/* Logo Styles */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    height: 48px;
+    width: auto;
+    border-radius: 8px;
+}
+
+/* Infrastructure Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(11, 19, 43, 0.9), transparent);
+    color: white;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .caption {
+    transform: translateY(0);
+}

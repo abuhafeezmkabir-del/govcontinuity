@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GovContinuity Protocol - 3-Factor Verification System and Arbitration Framework">
+    <title>Protocol | GovContinuity Bureau</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B132B',
+                        'navy-light': '#1A2744',
+                        gold: '#D4AF37',
+                        'gold-light': '#E8D48B',
+                        'gold-dark': '#B8960F',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="font-body bg-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-navy/95 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="logo-container">
+                    <img src="assets/images/logo.jpeg" alt="GovContinuity Bureau" class="logo-img">
+                    <div>
+                        <span class="text-white font-display font-bold text-lg leading-tight block">GovContinuity</span>
+                        <span class="text-gold text-xs tracking-widest uppercase">Bureau</span>
+                    </div>
+                </a>
+                
+                <div class="hidden lg:flex items-center space-x-1">
+                    <a href="about.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold rounded-lg">About</a>
+                    <a href="vision.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold rounded-lg">Vision</a>
+                    <a href="mission.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold rounded-lg">Mission</a>
+                    <a href="contractors.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold rounded-lg">Contractors</a>
+                    <a href="banks.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold rounded-lg">Banks</a>
+                    <a href="governments.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold rounded-lg">Governments</a>
+                    <a href="protocol.html" class="px-3 py-2 text-sm font-medium text-gold rounded-lg">Protocol</a>
+                    <a href="legal.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold rounded-lg">Legal</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="lg:hidden text-white hover:text-gold transition">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy-light border-t border-gray-700">
+            <div class="px-4 py-4 space-y-1">
+                <a href="about.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">About</a>
+                <a href="vision.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">Vision</a>
+                <a href="mission.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">Mission</a>
+                <a href="contractors.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">Contractors</a>
+                <a href="banks.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">Banks</a>
+                <a href="governments.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">Governments</a>
+                <a href="protocol.html" class="block px-3 py-2 text-sm text-gold rounded-lg">Protocol</a>
+                <a href="legal.html" class="block px-3 py-2 text-sm text-gray-300 rounded-lg">Legal</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+            <span class="text-gold font-semibold text-sm tracking-widest uppercase">Protocol</span>
+            <h1 class="text-4xl md:text-5xl font-display font-bold mt-4 mb-4">The GovContinuity Protocol</h1>
+            <p class="text-xl text-gray-300 max-w-3xl">The international standard for government contract continuity verification and arbitration.</p>
+        </div>
+    </section>
+
+    <!-- 3-Factor Verification -->
+    <section class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-navy">3-Factor Verification System</h2>
+                <div class="divider-gold mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Every contract certified by the Bureau undergoes rigorous three-factor verification before receiving the GovContinuity Seal.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Factor 1 -->
+                <div class="card-premium p-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-navy rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-3xl font-black text-gold">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy text-center mb-4">Legal Authentication</h3>
+                    <div class="space-y-3 text-sm text-gray-600">
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-gold mt-0.5"></i>
+                            <span>Verification of appropriation by National Assembly</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-gold mt-0.5"></i>
+                            <span>Due process certification by BPP</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-gold mt-0.5"></i>
+                            <span>Attorney General legal opinion confirmation</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-gold mt-0.5"></i>
+                            <span>Contract validity under Nigerian law</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Factor 2 -->
+                <div class="card-premium p-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-navy rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-3xl font-black text-gold">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy text-center mb-4">Financial Verification</h3>
+                    <div class="space-y-3 text-sm text-gray-600">
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-gold mt-0.5"></i>
+                            <span>Escrow account establishment with CBN-regulated bank</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-gold mt-0.5"></i>
+                            <span>Verification of fund allocation and availability</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-gold mt-0.5"></i>
+                            <span>Payment milestone schedule validation</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-gold mt-0.5"></i>
+                            <span>Political risk insurance underwriting confirmation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Factor 3 -->
+                <div class="card-premium p-8" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-navy rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-3xl font-black text-gold">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy text-center mb-4">Technical Validation</h3>
+                    <div class="space-y-3 text-sm text-gray-600">
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-gold mt-0.5"></i>
+                            <span>Contractor pre-qualification verification</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-gold mt-0.5"></i>
+                            <span>Scope of work and deliverable definition</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-gold mt-0.5"></i>
+                            <span>Timeline and milestone feasibility assessment</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-gold mt-0.5"></i>
+                            <span>Independent engineer/consultant sign-off</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Flow -->
+    <section class="section-padding bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-display font-bold text-navy">Certification Process</h2>
+                <div class="divider-gold mx-auto"></div>
+            </div>
+            
+            <div class="space-y-0">
+                <div class="flex items-center gap-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center flex-shrink-0 font-bold text-navy">1</div>
+                    <div class="flex-1 bg-white p-6 rounded-xl card-premium">
+                        <h4 class="font-bold text-navy">Contract Submission</h4>
+                        <p class="text-gray-600 text-sm">Government or contractor submits contract for registration with all supporting documents.</p>
+                    </div>
+                </div>
+                
+                <div class="w-0.5 h-8 bg-gold/30 ml-6"></div>
+                
+                <div class="flex items-center gap-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center flex-shrink-0 font-bold text-navy">2</div>
+                    <div class="flex-1 bg-white p-6 rounded-xl card-premium">
+                        <h4 class="font-bold text-navy">Three-Factor Verification</h4>
+                        <p class="text-gray-600 text-sm">Legal, financial, and technical verification conducted within 10 business days.</p>
+                    </div>
+                </div>
+                
+                <div class="w-0.5 h-8 bg-gold/30 ml-6"></div>
+                
+                <div class="flex items-center gap-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center flex-shrink-0 font-bold text-navy">3</div>
+                    <div class="flex-1 bg-white p-6 rounded-xl card-premium">
+                        <h4 class="font-bold text-navy">Escrow Establishment</h4>
+                        <p class="text-gray-600 text-sm">Contract funds deposited in CBN-regulated escrow account. Payment milestones registered.</p>
+                    </div>
+                </div>
+                
+                <div class="w-0.5 h-8 bg-gold/30 ml-6"></div>
+                
+                <div class="flex items-center gap-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center flex-shrink-0 font-bold text-gold">4</div>
+                    <div class="flex-1 bg-white p-6 rounded-xl card-premium border-2 border-gold">
+                        <h4 class="font-bold text-navy">GovContinuity Certification Issued</h4>
+                        <p class="text-gray-600 text-sm">Contract receives the GovContinuity Seal — recognized by courts, banks, and auditors as prima facie evidence of a valid, binding, and funded government obligation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arbitration -->
+    <section class="section-padding bg-navy text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-display font-bold">Arbitration Framework</h2>
+                <div class="divider-gold mx-auto"></div>
+            </div>
+            <div class="card-gold-border p-10">
+                <div class="flex items-start gap-4 mb-6">
+                    <div class="w-12 h-12 bg-gold rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-gavel text-navy text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gold mb-2">CBN-Recognized Arbitration</h3>
+                        <p class="text-gray-300">The Bureau serves as the primary arbitration body for contract disputes arising from government transitions. Our rulings are enforceable through the Federal High Court.</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                    <div class="flex items-center gap-2 text-gray-300">
+                        <i class="fas fa-check text-gold"></i> Binding arbitration
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-300">
+                        <i class="fas fa-check text-gold"></i> 30-day resolution window
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-300">
+                        <i class="fas fa-check text-gold"></i> CBN enforcement mechanism
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-300">
+                        <i class="fas fa-check text-gold"></i> No court appeals on findings of fact
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy border-t border-gray-800 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm text-gray-500">
+            <p>&copy; <span id="current-year">2026</span> GovContinuity Bureau. All rights reserved. Regulated by the Central Bank of Nigeria.</p>
+            <p>Powered by Qafam Software Technology Designed with <i class="fas fa-heart text-red-500"></i> by Hafeez Technologies </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

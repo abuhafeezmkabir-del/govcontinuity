@@ -310,67 +310,6 @@ body {
 .gallery-item:hover .caption {
     transform: translateY(0);
 }
-/* ============================================ */
-/* LAZY LOADING ANIMATIONS                      */
-/* ============================================ */
-.lazy-load {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
-                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.lazy-load.revealed { opacity: 1; transform: translateY(0); }
-
-.lazy-load-left {
-    opacity: 0;
-    transform: translateX(-50px);
-    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
-                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.lazy-load-left.revealed { opacity: 1; transform: translateX(0); }
-
-.lazy-load-right {
-    opacity: 0;
-    transform: translateX(50px);
-    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
-                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.lazy-load-right.revealed { opacity: 1; transform: translateX(0); }
-
-.lazy-load-scale {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
-                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.lazy-load-scale.revealed { opacity: 1; transform: scale(1); }
-
-.lazy-load-flip {
-    opacity: 0;
-    transform: perspective(600px) rotateY(20deg);
-    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.lazy-load-flip.revealed { opacity: 1; transform: perspective(600px) rotateY(0); }
-
-.lazy-load-blur {
-    opacity: 0;
-    filter: blur(10px);
-    transform: translateY(20px);
-    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-                filter 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.lazy-load-blur.revealed { opacity: 1; filter: blur(0); transform: translateY(0); }
-
-.delay-100 { transition-delay: 100ms; }
-.delay-200 { transition-delay: 200ms; }
-.delay-300 { transition-delay: 300ms; }
-.delay-400 { transition-delay: 400ms; }
-.delay-500 { transition-delay: 500ms; }
-.delay-600 { transition-delay: 600ms; }
-.delay-700 { transition-delay: 700ms; }
-.delay-800 { transition-delay: 800ms; }
 
 /* ============================================ */
 /* WHATSAPP FLOATING BUTTON                     */
@@ -455,3 +394,64 @@ body {
 .partner-logo-card:hover img {
     opacity: 1;
 }
+/* ============================================ */
+/* LAZY LOADING ANIMATIONS                      */
+/* ============================================ */
+.lazy-load {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.lazy-load.revealed { opacity: 1 !important; transform: translateY(0) !important; }
+
+.lazy-load-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.lazy-load-left.revealed { opacity: 1 !important; transform: translateX(0) !important; }
+
+.lazy-load-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.lazy-load-right.revealed { opacity: 1 !important; transform: translateX(0) !important; }
+
+.lazy-load-scale {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.lazy-load-scale.revealed { opacity: 1 !important; transform: scale(1) !important; }
+
+.lazy-load-flip {
+    opacity: 0;
+    transform: perspective(600px) rotateY(20deg);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.lazy-load-flip.revealed { opacity: 1 !important; transform: perspective(600px) rotateY(0) !important; }
+
+.lazy-load-blur {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(20px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                filter 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.lazy-load-blur.revealed { opacity: 1 !important; filter: blur(0) !important; transform: translateY(0) !important; }
+
+.delay-100 { transition-delay: 100ms !important; }
+.delay-200 { transition-delay: 200ms !important; }
+.delay-300 { transition-delay: 300ms !important; }
+.delay-400 { transition-delay: 400ms !important; }
+.delay-500 { transition-delay: 500ms !important; }
+.delay-600 { transition-delay: 600ms !important; }
+.delay-700 { transition-delay: 700ms !important; }
+.delay-800 { transition-delay: 800ms !important; }
